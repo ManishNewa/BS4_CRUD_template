@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+						<h2>Management of <b>Employees</b></h2>
+					</div>
+					<div class="col-sm-6">
+						<a href="add_employee.html" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+						<a href="" class="btn btn-danger" onclick="confirm('Are you sure?')"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+					</div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+						<th>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="selectAll">
+								<label for="selectAll"></label>
+							</span>
+						</th>
+                        <th>Name</th>
+                        <th>Email</th>
+						<th>Address</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                	<!-- Insert your data in the custom data part, others will remain the same -->
+                    <tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox1" name="options[]" value="1">
+								<label for="checkbox1"></label>
+							</span>
+						</td>
+
+						<!-- Custom Data  -->
+                        <td>Thomas Hardy</td>
+                        <td>thomashardy@mail.com</td>
+						<td>89 Chiaroscuro Rd, Portland, USA</td>
+                        <td>(171) 555-2222</td>
+
+                        <!-- Custom Data ends -->
+                        <td>
+                            <a href="edit_employee.html" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="" class="delete" onclick="confirm('Are you sure?')"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>    
+        </div>
+    </div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="./js/script.js">
+	
+</script>
+</body>
+</html>                                		                            
