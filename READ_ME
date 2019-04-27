@@ -4,6 +4,6 @@ Open cmd
 
 goto the folder where you want to clone the git files in cmd 
 
-Insert the following codes
+Insert the following codes to clone the codes to your computer
 
-git clone https://github.com/ManishNewa/BS4_CRUD_template/new/master
+git clone https://github.com/ManishNewa/BS4_CRUD_template.git
